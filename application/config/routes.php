@@ -50,6 +50,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
-$route['default_controller'] = 'Alat_kimia';
+$route['default_controller'] = 'Admin_trv';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
