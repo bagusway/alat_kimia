@@ -17,7 +17,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/alat_lab';
+$config['base_url'] = 'http://localhost/alat_kimia';
+// $config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
