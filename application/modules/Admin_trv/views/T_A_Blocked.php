@@ -7,7 +7,7 @@
         var _id = $(this).data('_id');
         $("#_id2").val(_id);
         });
-    $(document).on( "click", '#tombolblock',function(e) {
+    $(document).on( "click", '#tombolunblock',function(e) {
         var _id = $(this).data('_id');
         $("#_id3").val(_id);
         });
@@ -40,7 +40,7 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Travel Agent Terdaftar</h3>
+              <h3 class="box-title">Travel Agent Blocked</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -58,7 +58,7 @@
                 <tbody>
                 <?php 
                 foreach ($contents as $key) {
-                  if($key->flag_blocked==0){
+                  if($key->flag_blocked==1){
                   echo "<tr> 
                   <td>".$key->travel_name." </td>
                   <td>".$key->medsoc_account." </td>
@@ -68,8 +68,8 @@
                   
                   <td><button type='button' id='tombollihat' data-toggle='modal' data-target='#modallihat'
                     data-_id='".$key->_id."' class='btn btn-info btn-xs'>Lihat Trip</button>
-                    <button type='button' id='tombolblock' data-toggle='modal' data-_id='".$key->_id."' data-target='#modalblock'
-                          class='btn btn-danger btn-xs'> Block</button>
+                    <button type='button' id='tombolunblock' data-toggle='modal' data-_id='".$key->_id."' data-target='#modalunblock'
+                          class='btn btn-danger btn-xs'> Unblock</button>
                     
                         </td>
                   </tr>";}
@@ -111,7 +111,7 @@
             </div>
           </div>
 
-<div class="modal fade" id="modalblock" role="dialog">
+<div class="modal fade" id="modalunblock" role="dialog">
             <div class="modal-dialog modal-sm">
               <div class="modal-content">
                 

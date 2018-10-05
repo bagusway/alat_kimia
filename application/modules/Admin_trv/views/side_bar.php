@@ -12,7 +12,7 @@
           <img src="<?php echo base_url('dist/img/user2-160x160.jpg');?>" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p><?php echo $this->session->userdata('name');?></p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -53,6 +53,7 @@
           <ul class="treeview-menu">
             <li><a href="<?php echo base_url('Admin_trv/T_A_Baru'); ?>"><i class="fa fa-circle-o"></i> Travel Agent Baru</a></li>
             <li><a href="<?php echo base_url('Admin_trv/T_A_Terdaftar'); ?>"><i class="fa fa-circle-o"></i> Travel Agent Terdaftar</a></li>
+             <li><a href="<?php echo base_url('Admin_trv/T_A_Blocked'); ?>"><i class="fa fa-circle-o"></i> Travel Agent Blocked</a></li>
           </ul>
         </li>
         <li class="treeview">

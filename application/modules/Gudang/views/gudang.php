@@ -381,7 +381,7 @@
                   </div>
                   <div class="modal-body">
                   
-                  <div class="row">
+                <div class="row">
                   <div class="col-md-12">
                     <form name="simpan_data" action="<?php echo $action;?>" method="post">
                     <div class="row">
@@ -435,7 +435,7 @@
                   </div>
                  
                 </div>
-                  </div>
+             </div>
                   <div class="modal-footer">
                     <div class="col-md-6"><span class="pull-right"><input type="submit" name="simpan" value="Simpan" class="btn btn-primary" id="simpan"></span></div>
                     </div>

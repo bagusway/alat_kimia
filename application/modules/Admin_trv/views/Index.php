@@ -32,7 +32,7 @@
 
             <div class="info-box-content">
               <span class="info-box-text">Pengguna</span>
-              <span class="info-box-number">9,000</span>
+              <span class="info-box-number"><?php echo $user_count ?></span>
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -45,7 +45,7 @@
 
             <div class="info-box-content">
               <span class="info-box-text">Travel Agent</span>
-              <span class="info-box-number">4,410</span>
+              <span class="info-box-number"><?php echo $provider_count; ;?></span>
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -62,7 +62,7 @@
 
             <div class="info-box-content">
               <span class="info-box-text">Trip Selesai</span>
-              <span class="info-box-number">760</span>
+              <span class="info-box-number"><?php echo $booking_count; ?></span>
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -75,7 +75,7 @@
 
             <div class="info-box-content">
               <span class="info-box-text">Trip Diposting</span>
-              <span class="info-box-number">2,000</span>
+              <span class="info-box-number"><?php echo $trip_count; ?></span>
             </div>
             <!-- /.info-box-content -->
           </div>

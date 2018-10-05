@@ -17,8 +17,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/alat_kimia';
-// $config['base_url'] = '';
+// $config['base_url'] = 'http://localhost/alat_kimia';
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -480,7 +480,7 @@ $config['time_reference'] = 'local';
 |
 */
 $config['rewrite_short_tags'] = FALSE;
-
+$config['api_key_header_name'] = 'Authorization';
 
 /*
 |--------------------------------------------------------------------------
